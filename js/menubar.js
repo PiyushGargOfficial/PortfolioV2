@@ -19,7 +19,7 @@ init();
 function inStart() {
   setInterval(function () {
     afterLoading();
-  }, 3000);
+  }, 5000);
 }
 inStart();
 
