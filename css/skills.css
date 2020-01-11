@@ -1,0 +1,237 @@
+/*Random Gallery */
+.rGal {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rGal .rgCont {
+    position: relative;
+    width: 95%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.rGal .rgCont .rgItem {
+    background: url('../assets/skills/visuel_full.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*-----------------------------------------*/
+
+.skills {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    overflow: hidden;
+}
+
+.skills .sCont {
+    width: 95%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    background: #f8f8f8;
+}
+
+.skills .sCont .skHead .sksmCont {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skills .sCont .skHead .sksmCont .sktbHead {
+    position: relative;
+    font-style: italic;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.skills .sCont .skHead .sksmCont .sktbText {
+    position: relative;
+    font-size: 1.8rem;
+    font-family: "Gilroy";
+    color: white;
+    word-spacing: 3px;
+}
+
+.skills .sCont .skHead .sksmCont .sktbText span {
+    color: black;
+}
+
+.skills .sCont .skHead {
+    width: 60%;
+    height: 100%;
+    background-color: #CC6666;
+    position: relative;
+}
+
+.skills .sCont .skHead .skhBox {
+    position: absolute;
+    top: 15%;
+    right: -20%;
+    font-family: "Gilroy";
+    text-align: left;
+    color: #1C1B20;
+
+}
+
+.skills .sCont .skHead .skhBox .skhIcon {
+    position: relative;
+    display: flex;
+}
+
+.skills .sCont .skHead .skhBox .skhIcon img {
+    width: 40px;
+    transform: rotate(-180deg);
+}
+
+.skills .sCont .skHead .skhBox .skhHeadText {
+    position: relative;
+    font-size: 10rem;
+    font-family: "Gilroy";
+    text-transform: uppercase;
+    font-weight: bolder;
+    line-height: 1em;
+    letter-spacing: -2px;
+    z-index: 2;
+}
+
+/*-----------------------------------------------*/
+
+.skillGal {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    background: #f8f8f8;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillGal .skCont {
+    width: 95%;
+    height: 90%;
+    background: #1C1B20;
+    position: relative;
+    display: flex;
+    padding: 60px 150px 60px 150px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.skillGal .skCont .skcInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.skillGal .skCont .skcInner .skciHead {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    color: white;
+    font-family: "Gilroy";
+    font-size: 3.0rem;
+    line-height: 1em;
+    margin-bottom: 50px;
+}
+
+.skillGal .skCont .skcInner .skciHead span {
+    font-family: none;
+    font-style: italic;
+    font-size: 2.6rem;
+}
+
+
+.skillGal .skCont .skcInner .skciDel {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+}
+
+.skillGal .skCont .skcInner .skciDel .skcdItem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background: #CC5555;
+    min-width: 400px;
+    padding: 30px;
+    text-align: left;
+}
+
+.skillGal .skCont .skcInner .skciDel .skcdItem h3 {
+    font-family: "GilroyL";
+    margin-bottom: 40px;
+    font-size: 1.6rem;
+    line-height: 1em;
+}
+
+.skillGal .skCont .skcInner .skciDel .skcdItem h3 span {
+    font-family: "none";
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.skillGal .skCont .skcInner .skciDel .skcdItem div {
+    font-family: "GilroyL";
+    line-height: 1.3em;
+    font-size: 1rem;
+}
+
+.skillGal .skCont .skcInner .skciDel .skcdItem div span {
+    color: #1C1B20;
+    /* color: rgba(0, 0, 0, 0.5); */
+}
+
+
+.skillGal .scrollBarText {
+    position: absolute;
+    bottom: 9%;
+    left: 2%;
+    cursor: pointer;
+    z-index: 4;
+    color: white;
+    font-size: .7rem;
+    transform: rotate(-90deg);
+    font-family: "GilroyL";
+}
+
+.skillGal .scrollBarIcon {
+    position: absolute;
+    bottom: 2.5%;
+    left: 2.6%;
+    width: 13px;
+    height: 15px;
+    cursor: pointer;
+    z-index: 4;
+    font-size: .7rem;
+    animation: upDown2 infinite 1.5s;
+}
+
+.skillGal .scrollBarIcon img {
+    max-width: 40px;
+    max-height: 40px;
+    width: 13px;
+    height: 15px;
+}

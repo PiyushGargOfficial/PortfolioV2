@@ -1,0 +1,215 @@
+.menuBar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70px;
+  height: 10px;
+  top: 50%;
+  left: 4%;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.menuBar .menuBarIcon {
+  width: 30px;
+  height: 2px;
+  background: black;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+/* .menuBar:hover .menuBarIcon {
+    width: 40px;
+}
+
+.menuBar:hover .menuBarIcon::before,
+.menuBar:hover .menuBarIcon::after {
+    width: 40px;
+} */
+
+.menuBarIcon::before,
+.menuBarIcon::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: black;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.menuBarIcon::before {
+  transform: translateY(-8px);
+}
+
+.menuBarIcon::after {
+  transform: translateY(8px);
+  width: 10px;
+}
+
+.menuBar .menuBarText {
+  font-size: 8px;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: rotate(-90deg);
+  transition: all 1s ease-out;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*Animation*/
+
+.menuBar.open .menuBarIcon {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menuBar.open .menuBarIcon::before {
+  transform: rotate(45deg) translate(35px, -35px);
+  width: 20px;
+}
+
+.menuBar.open .menuBarIcon::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+  width: 20px;
+}
+
+.menuBar.open .menuBarText {
+  transform: translateX(-50px);
+  transition: all 1s ease-out;
+  display: none;
+}
+
+/*Menu*/
+.menu {
+  background: white;
+  position: fixed;
+  height: 50%;
+  display: flex;
+  width: 25%;
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  transform: translateX(-100%);
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.menu.active {
+  transform: translateX(0);
+  border-radius: 0%;
+  width: 75%;
+  opacity: 1;
+  height: 100%;
+}
+
+.menu::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+  /*https://css-tricks.com/almanac/properties/v/vertical-align/*/
+}
+
+.menu ul {
+  width: 80%;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.menu ul li {
+  display: block;
+  line-height: 2;
+  font-size: 0.8rem;
+  padding-left: 10%;
+  font-weight: bolder;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  list-style: none;
+  letter-spacing: 2px;
+  font-family: "GilroyL";
+}
+
+.menu ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 3em;
+  padding: 5px 20px;
+  display: inline-flex;
+  font-weight: 700;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.menu.active ul li a {
+  opacity: 1;
+}
+
+.menu ul li:hover a {
+  color: #000;
+  background: #fff;
+}
+
+.menu ul li a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 500px;
+  transition: letter-spacing 0.5s, left 0.5s;
+}
+
+.menu ul li a:hover:before {
+  content: attr(data-text);
+  opacity: 1;
+  left: 50%;
+  letter-spacing: 10px;
+  width: 1800px;
+  height: 1800px;
+}
+
+.menu ul li:nth-child(6n + 1) a:before {
+  background: #81ecec;
+}
+
+.menu ul li:nth-child(6n + 2) a:before {
+  background: #ff7675;
+}
+
+.menu ul li:nth-child(6n + 3) a:before {
+  background: #55efc4;
+}
+
+.menu ul li:nth-child(6n + 4) a:before {
+  background: #a29bfe;
+}
+
+.menu ul li:nth-child(6n + 5) a:before {
+  background: #fd79a8;
+}
+
+.menu ul li:nth-child(6n + 6) a:before {
+  background: #ffeaa7;
+}

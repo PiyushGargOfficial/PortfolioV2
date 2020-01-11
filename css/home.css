@@ -1,0 +1,111 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .mainBlock {
+  width: 95%;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.home .mainBlock .leftBlock {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  background: #CC5555;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.home .mainBlock .rightBlock {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  background: #f8f8f8;
+}
+
+.home .mainBlock .mainBlockText {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  font-size: 10.5rem;
+  font-family: "Gilroy";
+  line-height: 1em;
+  color: #1C1B20;
+}
+
+.home .mainBlock .mainBlockText span {
+  color: #000;
+  margin-left: -10px;
+  font-family: "Gilroy";
+  line-height: 1em;
+}
+
+.home .scrollBarText {
+  position: absolute;
+  bottom: 9%;
+  left: 2%;
+  cursor: pointer;
+  z-index: 4;
+  color: black;
+  font-size: .7rem;
+  transform: rotate(-90deg);
+  font-family: "GilroyL";
+}
+
+.home .scrollBarIcon {
+  position: absolute;
+  bottom: 6%;
+  left: 2.6%;
+  width: 13px;
+  height: 15px;
+  cursor: pointer;
+  z-index: 4;
+  color: black;
+  font-size: .7rem;
+  animation: upDown infinite 1.5s;
+}
+
+.home .scrollBarIcon img {
+  max-width: 40px;
+  max-height: 40px;
+  width: 13px;
+  height: 15px;
+}
+
+
+.home .mainBlock .leftBlock .hlTextBox {
+  position: relative;
+  width: 400px;
+  margin-left: 200px;
+}
+
+.home .mainBlock .leftBlock .hlTextBox .hlHead {
+  position: relative;
+  font-style: italic;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.home .mainBlock .leftBlock .hlTextBox .hlText {
+  position: relative;
+  font-size: 1.8rem;
+  font-family: "Gilroy";
+  color: white;
+  word-spacing: 3px;
+}
+
+.home .mainBlock .leftBlock .hlTextBox .hlText span {
+  color: black;
+}

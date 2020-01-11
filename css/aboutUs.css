@@ -1,0 +1,186 @@
+.aboutus {
+    width: 100%;
+    height: 130vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    z-index: 1;
+}
+
+.aboutus .auCont {
+    position: relative;
+    width: 95%;
+    height: 90%;
+}
+
+.aboutus .auCont .aucUpper {
+    position: relative;
+    height: 35%;
+    width: 100%;
+    background: #f8f8f8;
+}
+
+.aboutus .auCont .aucUpper .auTextCont {
+    position: absolute;
+    bottom: -20%;
+    left: 20%;
+    color: #1C1B20;
+    z-index: 2;
+}
+
+.aboutus .auCont .aucUpper .auTextCont .autcIcon {
+    position: relative;
+    display: flex;
+}
+
+.aboutus .auCont .aucUpper .auTextCont .autcIcon img {
+    width: 40px;
+    transform: rotate(-180deg);
+}
+
+.aboutus .auCont .aucUpper .auTextCont .autcHead {
+    position: relative;
+    font-size: 8rem;
+    font-family: "Gilroy";
+    text-transform: uppercase;
+    font-weight: bolder;
+    line-height: 1em;
+    letter-spacing: -2px;
+    z-index: 2;
+}
+
+.aboutus .auCont .aucLower {
+    position: relative;
+    height: 65%;
+    width: 100%;
+    display: flex;
+}
+
+.aboutus .auCont .aucLower .aulLeft {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    background: #cc6666;
+}
+
+.aboutus .auCont .aucLower .aulLeft .aullTextCont {
+    position: relative;
+    width: 60%;
+    height: 70%;
+    margin: 120px 0 0 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutus .auCont .aucLower .aulLeft .aullTextCont .aultHead {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    color: white;
+    font-family: "Gilroy";
+    font-size: 1.8rem;
+    line-height: 1em;
+}
+
+.aboutus .auCont .aucLower .aulLeft .aullTextCont .aultHead span {
+    font-family: none;
+    font-style: italic;
+    font-size: 1.4rem;
+
+}
+
+.aboutus .auCont .aucLower .aulLeft .aullTextCont .aultMes {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    font-family: "GilroyL";
+    line-height: 30px;
+    font-size: 16px;
+    padding-top: 40px;
+    color: white;
+}
+
+.aboutus .auCont .aucLower .aulLeft .aullTextCont .aultSoc {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    color: white;
+    font-family: none;
+    font-size: 24px;
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+.aboutus .auCont .aucLower .aulLeft .aullTextCont .aultSoc div {
+    margin-top: 10px;
+}
+
+
+.aboutus .auCont .aucLower .aulLeft .aullTextCont .aultSoc div a {
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.aboutus .auCont .aucLower .aulLeft .aullTextCont .aultSoc div a img {
+    max-width: 40px;
+    max-height: 40px;
+    width: 20px;
+    height: 20px;
+}
+
+/* 
+.aboutus .auCont .aucLower .aulLeft .aullTextCont .aultSoc div a img:hover {
+    transform: translateX(-100px);
+} */
+
+
+
+.aboutus .auCont .aucLower .aulRight {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background: blue;
+}
+
+.aboutus .auCont .aucLower .aulRight .auImgBox {
+    width: 100%;
+    height: 100%;
+    background: url('../assets/images/IMG20191020162848.jpg');
+    background-size: cover;
+    background-position-x: -35px;
+}
+
+.aboutus .scrollBarText {
+    position: absolute;
+    bottom: 9%;
+    left: 2%;
+    cursor: pointer;
+    z-index: 4;
+    color: black;
+    font-size: .7rem;
+    transform: rotate(-90deg);
+    font-family: "GilroyL";
+}
+
+.aboutus .scrollBarIcon {
+    position: absolute;
+    bottom: 6%;
+    left: 2.6%;
+    width: 13px;
+    height: 15px;
+    cursor: pointer;
+    z-index: 4;
+    color: black;
+    font-size: .7rem;
+    animation: upDown infinite 1.5s;
+}
+
+.aboutus .scrollBarIcon img {
+    max-width: 40px;
+    max-height: 40px;
+    width: 13px;
+    height: 15px;
+}

@@ -1,0 +1,33 @@
+.contactTemp {
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.contactTemp .ctCont {
+    position: relative;
+    width: 95%;
+    height: 100%;
+    background: #f8f8f8;
+    color: #1C1B20;
+}
+
+.contactTemp .ctCont .ctHead {
+    position: absolute;
+    font-size: 8rem;
+    font-family: "Gilroy";
+    text-transform: uppercase;
+    z-index: 2;
+    bottom: -22%;
+    left: 12%;
+    font-weight: bolder;
+    line-height: 1em;
+    letter-spacing: -2px;
+}
+
+.contactTemp .ctCont .ctHead img {
+    transform: rotate(-180deg);
+    margin-bottom: -30px;
+}

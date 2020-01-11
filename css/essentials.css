@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url('../Gilroy-Heavy.ttf');
+}
+
+@font-face {
+    font-family: GilroyL;
+    src: url('../Gilroy-ExtraBold.otf');
+}
+
+:root {
+    --primary-red: #ff5851;
+}
+
+@keyframes upDown {
+    0% {
+        bottom: 6%;
+    }
+
+    50% {
+        bottom: 4.2%;
+    }
+
+    100% {
+        bottom: 6%;
+    }
+}
+
+@keyframes upDown2 {
+    0% {
+        bottom: 2.5%;
+    }
+
+    50% {
+        bottom: 0.2%;
+    }
+
+    100% {
+        bottom: 2.5%;
+    }
+}

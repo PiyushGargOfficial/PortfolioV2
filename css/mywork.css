@@ -1,0 +1,87 @@
+.mywork {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mywork .workIntro {
+    width: 95%;
+    height: 85%;
+    position: relative;
+    display: flex;
+    background: #f8f8f8;
+}
+
+.mywork .workIntro .workHead {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: "Gilroy";
+}
+
+.mywork .workIntro .workHead span {
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 180px;
+}
+
+.mywork .workIntro .workHead .upperHead {
+    position: relative;
+    line-height: 120px;
+    font-size: 150px;
+    font-weight: bold;
+}
+
+.mywork .workIntro .workHead .lowerHead {
+    line-height: 120px;
+    position: relative;
+    font-size: 150px;
+    font-weight: bold;
+}
+
+
+.mywork .workIntro .workDel {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #414A6B;
+    flex-direction: column;
+}
+
+.mywork .workIntro .workDel .wdHead {
+    font-size: 1.3rem;
+    position: relative;
+    font-style: italic;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.mywork .workIntro .workDel .workDelText {
+    position: relative;
+    width: 320px;
+    font-size: 24px;
+    font-family: "GilroyL";
+    color: #ffffff;
+}
+
+.mywork .workIntro .workDel .workDelText span {
+    color: #F3C12F;
+}
+
+
+.mywork .workIntro .workDel .workDelText a:active,
+.mywork .workIntro .workDel .workDelText a:visited {
+    color: #F3C12F;
+}

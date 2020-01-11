@@ -1,0 +1,321 @@
+.workGal {
+    width: 100%;
+    height: 160vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workGal .galContainer {
+    position: relative;
+    width: 95%;
+    height: 90%;
+    display: grid;
+    z-index: 1;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    line-height: 1em;
+}
+
+.workGal .galContainer .workGalItem {
+    position: relative;
+    overflow: hidden;
+}
+
+.workGal .galContainer .workGalItem .imgBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.workGal .galContainer .workGalItem .imgBox img {
+    max-width: 100%;
+    height: 100%;
+    transition: transform 2s;
+
+}
+
+.workGal .galContainer .workGalItem:hover .imgBox img {
+    transform: scale(1.2);
+}
+
+.workGal .galContainer .workGalItem .itemDel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #263477;
+    width: 100%;
+    height: 150%;
+    transform: scaleY(0) skewY(50deg);
+    transition: transform .4s ease-in;
+    transform-origin: bottom;
+    z-index: 3;
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+2) .itemDel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #E3544A;
+    width: 100%;
+    height: 150%;
+    transform: scaleY(0) skewY(50deg);
+    transition: all .4s ease-in;
+    transform-origin: bottom;
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+3) .itemDel {
+    background: #101420;
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+4) .itemDel {
+    background: #F7C700;
+}
+
+
+.workGal .galContainer .workGalItem:nth-child(9n+5) .itemDel {
+    background: #33255E;
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+6) .itemDel {
+    background: #FE7882;
+}
+
+
+.workGal .galContainer .workGalItem:nth-child(9n+7) .itemDel {
+    background: #ffa500;
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+9) .itemDel {
+    background: #996666;
+}
+
+
+.workGal .galContainer .workGalItem:hover .itemDel {
+    transform: scaleY(1) skewY(0deg);
+}
+
+.workGal .galContainer .workGalItem .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    width: 80%;
+    height: 100%;
+    padding: 260px 0 90px 50px;
+    transition: all .5s ease-in;
+}
+
+.workGal .galContainer .workGalItem .content h5 {
+    color: white;
+    font-style: italic;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.workGal .galContainer .workGalItem .content h2 {
+    color: white;
+    font-family: "GilroyL";
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-weight: 1000;
+    line-height: 1em;
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+1) .content h2 {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+3):hover .content h2 {
+    color: #ffb329;
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+6):hover .content h2 {
+    color: white;
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+8):hover .content .desc {
+    color: orange;
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+6) .content h2 {
+
+    word-spacing: -10px;
+}
+
+
+.workGal .galContainer .workGalItem:nth-child(9n+6) .content .desc {
+    word-spacing: 0px;
+}
+
+
+.workGal .galContainer .workGalItem:nth-child(9n+1):hover .content h2 {
+    color: yellow;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+.workGal .galContainer .workGalItem .content .desc {
+    color: #000;
+    font-family: "GilroyL";
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 1000;
+    letter-spacing: -1px;
+    opacity: 0;
+    transition: all .1s ease;
+    transition-delay: .2s;
+    line-height: 1em;
+
+}
+
+.workGal .galContainer .workGalItem:hover .content {
+    transform: translateY(-100px);
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+1):hover .content {
+    transform: translateY(-120px);
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+2):hover .content {
+    transform: translateY(-120px);
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+3):hover .content {
+    transform: translateY(-130px);
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+4):hover .content {
+    transform: translateY(-125px) !important;
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+5):hover .content {
+    transform: translateY(-120px) !important;
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+6):hover .content {
+    transform: translateY(-125px);
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+7):hover .content {
+    transform: translateY(-150px) !important;
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+8):hover .content {
+    transform: translateY(-125px) !important;
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+9):hover .content {
+    transform: translateY(-125px) !important;
+}
+
+.workGal .galContainer .workGalItem:hover .content .desc {
+    opacity: 1;
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+1):hover .content .desc {
+    opacity: 1;
+    color: #fff;
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+3):hover .content .desc {
+    opacity: 1;
+    color: #fff;
+}
+
+
+.workGal .galContainer .workGalItem:nth-child(9n+5):hover .content .desc {
+    opacity: 1;
+    color: #C65666;
+
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+6):hover .content .desc {
+    opacity: 1;
+    color: #000;
+
+}
+
+.workGal .galContainer .workGalItem:hover .content h5 {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.workGal .galContainer .workGalItem .overlayDiv {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.workGal .galContainer .workGalItem:nth-child(9n+4) .overlayDiv,
+.workGal .galContainer .workGalItem:nth-child(9n+9) .overlayDiv,
+.workGal .galContainer .workGalItem:nth-child(9n+6) .overlayDiv {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.workGal .galContainer .workGalItem .content p {
+    color: white;
+    font-family: "GilroyL";
+    letter-spacing: 1px;
+    line-height: 1em;
+    font-size: 1.2rem;
+    font-weight: 1000;
+    display: flex;
+    margin-top: 10px;
+}
+
+.workGal .galContainer .workGalItem .content p a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 10px 10px 0 0;
+}
+
+.workGal .galContainer .workGalItem .content p a img {
+    max-width: 40px;
+    max-height: 40px;
+    width: 20px;
+    height: 20px;
+    padding: 0px 0 0 0;
+}
+
+
+.workGal .scrollBarText {
+    position: absolute;
+    bottom: 9%;
+    left: 2%;
+    cursor: pointer;
+    z-index: 4;
+    color: black;
+    font-size: .7rem;
+    transform: rotate(-90deg);
+    font-family: "GilroyL";
+}
+
+.workGal .scrollBarIcon {
+    position: absolute;
+    bottom: 6%;
+    left: 2.6%;
+    width: 13px;
+    height: 15px;
+    cursor: pointer;
+    z-index: 4;
+    color: black;
+    font-size: .7rem;
+    animation: upDown infinite 1.5s;
+}
+
+.workGal .scrollBarIcon img {
+    max-width: 40px;
+    max-height: 40px;
+    width: 13px;
+    height: 15px;
+}

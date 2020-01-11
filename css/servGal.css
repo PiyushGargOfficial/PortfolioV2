@@ -1,0 +1,163 @@
+.servGal {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    background: #f8f8f8;
+    justify-content: center;
+    align-items: center;
+}
+
+.servGal .sgCont {
+    width: 95%;
+    height: 90%;
+    background: #1C1B20;
+    position: relative;
+    display: flex;
+    padding: 100px 150px;
+    color: #fff;
+}
+
+.servGal .sgCont .sgb1 {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    text-align: right;
+    padding: 0 100px 0 0;
+}
+
+.servGal .sgCont .sgb1 .b1Head {
+    text-transform: uppercase;
+    font-family: "GilroyL";
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.servGal .sgCont .sgb1 .b1Text {
+    font-size: 12px;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+.servGal .sgCont .sgb2 {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    padding-right: 70px;
+}
+
+.servGal .sgCont .sgb2 .sgUpper {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    position: relative;
+    margin-bottom: -60px;
+}
+
+
+.servGal .sgCont .sgb2 .sgLower {
+    width: 100%;
+    position: relative;
+    height: 50%;
+    display: flex;
+}
+
+.servGal .sgCont .sgb2 .b2B {
+    width: 150px;
+    height: 150px;
+    border: 1px dashed white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    margin-right: -10px;
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+.servGal .sgCont .sgb2 .b2B:before {
+    content: 'DE';
+    font-size: 15px;
+    font-style: normal;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: "Gilroy";
+
+}
+
+.servGal .sgCont .sgb2 .b2B.B2:before {
+    content: 'OR';
+}
+
+.servGal .sgCont .sgb2 .b2B.B3:before {
+    content: 'DE';
+}
+
+.servGal .sgCont .sgb2 .b2B.B4:before {
+    content: 'LA';
+}
+
+.servGal .sgCont .sgb3 {
+    background: #FFA500;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    padding: 40px;
+}
+
+.servGal .sgCont .sgb3 .b3Head {
+    color: white;
+    font-family: "Gilroy";
+    font-size: 1.8rem;
+    line-height: 1em;
+    margin-bottom: 50px;
+}
+
+.servGal .sgCont .sgb3 .b3Head span {
+    font-family: none;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.servGal .sgCont .sgb3 .b3Text {
+    font-family: "GilroyL";
+    line-height: 24px;
+    font-size: 1rem;
+}
+
+.servGal .scrollBarText {
+    position: absolute;
+    bottom: 9%;
+    left: 2%;
+    cursor: pointer;
+    z-index: 4;
+    color: white;
+    font-size: .7rem;
+    transform: rotate(-90deg);
+    font-family: "GilroyL";
+}
+
+.servGal .scrollBarIcon {
+    position: absolute;
+    bottom: 2.5%;
+    left: 2.6%;
+    width: 13px;
+    height: 15px;
+    cursor: pointer;
+    z-index: 4;
+    font-size: .7rem;
+    animation: upDown2 infinite 1.5s;
+}
+
+.servGal .scrollBarIcon img {
+    max-width: 40px;
+    max-height: 40px;
+    width: 13px;
+    height: 15px;
+}
